@@ -1,0 +1,106 @@
+.ShopItem{
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    border-radius: 24px;
+    border-style:solid;
+    border-color:#dedede;
+    margin:20px;
+    width:400px;
+    height:120px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.Count{
+    position: absolute;
+    color: rgba(200,200,200,30);
+    left:20px;
+    font-size:40px;
+    pointer-events: none;
+}
+
+.Title{
+    display:flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.Description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    border-radius: 12px;
+    transform: translateY(-24px);
+    pointer-events: none;
+}
+
+.ShopItem:hover .Description{
+    visibility: visible;
+}
+
+.ShopItem:hover .Count{
+    position: absolute;
+    color: rgba(255,255,255,30);
+    left:20px;
+    font-size:40px;
+}
+
+.ShopItem:hover{
+    background-color: #dedede;
+    cursor:pointer
+}
+
+.CostUpg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+    transform:translateY(-23px);
+    pointer-events: none;
+}
+
+.ImgCookie{
+    height:30px;
+    width:30px;
+    pointer-events: none;
+}
+
+
+
+
+@media (max-width:500px){
+    .Title{
+        font-size:3vw;
+    }
+    .CostUpg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        transform:translateY(-1vw);
+        pointer-events: none;
+    }
+}
+
+@media (max-width:1000px){
+    .ShopItem{
+        width:45vw;
+        align-items: center;
+    }
+
+    .CookieContainer{
+        transform:translateX(0);
+        transform:translateY(-10vh);
+    }
+
+    .Cookie{
+        width:45vw;
+    }
+}

@@ -1,0 +1,101 @@
+.Main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.RepoStars{
+    z-index: 1;
+    position: absolute;
+    font-size: 15px;
+}
+
+.CookieContainer{
+    position: relative;
+    height:100vh;
+    transform:translateX(-20vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CookieInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-17vw);
+    position: absolute;
+    color: black;
+    line-height: 0px;
+}
+
+.Cookie{
+    width:25vw;
+}
+
+.Shops{
+    position: absolute;
+    top:0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+
+.ShopUpgrades{
+    overflow-y: scroll;
+    height:19.8vh;
+    border-width: 0.2vh;
+    border-style:solid;
+    border-color:#000000;
+}
+
+.ShopBuildings{
+    overflow-y: scroll;
+    height:59.8vh;
+    border-width: 0.2vh;
+    border-style:solid;
+    border-color:#000000;
+}
+
+.ShopTitle{
+    z-index: 1;
+    height:10vh;
+    width:400px;
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    font-size: 1.2vh;
+    margin:0;
+}
+
+@media (max-width:1000px){
+    .ShopTitle{
+        height:10vh;
+        width:auto;
+    }
+
+    .CookieInfo{
+        transform: translateY(-33vw);
+        position: absolute;
+        color: black;
+    }
+
+    .Shops{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        bottom: 0px;
+    }
+
+    .ShopBuildings, .ShopUpgrades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x:hidden;
+        height:25vh;
+        width:50vw;
+    }
+}
