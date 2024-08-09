@@ -4,11 +4,11 @@ import BuildingShop from "./components/BuildingShop";
 import UpgradeShop from "./components/UpgradeShop";
 import Cookie from "./components/Cookie";
 
-const api = "http://localhost:3000";
+const api = "https://techeducatorsweek6server.onrender.com";
 const apiBuildings = `${api}/buildings`;
 const apiUpgrades = `${api}/upgrades`;
 
-const repo = "https://api.github.com/repos/lance-o/NutriGenius";
+const repo = "https://api.github.com/repos/lance-o/TechEducatorsWeek6";
 
 let defaultCookies = 0;
 let defaultUpgrades = [];
