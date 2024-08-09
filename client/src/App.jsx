@@ -193,9 +193,13 @@ export default function App(props) {
     <>
       <header></header>
       <section className="Main">
-        <h1 className="RepoStars" onClick={addStarCookies}>
-          This repo has {stars} stars! Yay!
-        </h1>
+        {stars > 0 ? (
+          <h1 className="RepoStars" onClick={addStarCookies}>
+            This repo has {stars} stars! Yay!
+          </h1>
+        ) : (
+          <h1 className="RepoStars">This repo has {stars} stars. Oh no!</h1>
+        )}
 
         <section className="CookieContainer">
           <div className="CookieInfo">
